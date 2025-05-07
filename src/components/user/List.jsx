@@ -19,7 +19,7 @@ const UserList = () => {
             .then(response => {
                 const filteredUsers = response.data.users.map((user) => ({
                     id: user.id,
-                    username: user.username,
+                    username: user.firstName,
                     companyName: user.company.name,
                     Role: user.role,
                     country: user.address.country,
